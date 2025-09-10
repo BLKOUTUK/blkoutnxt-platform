@@ -1,0 +1,36 @@
+{
+  "name": "blkoutnxt-platform",
+  "version": "1.0.0",
+  "description": "BLKOUT Community Liberation Platform - Next-Generation Production System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Starting local API server...'",
+    "build": "echo 'Build completed - API-only deployment'",
+    "start": "vercel --prod",
+    "deploy": "vercel --prod",
+    "deploy:staging": "vercel --prod --alias=blkout-moderation-staging",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "@vercel/node": "^3.0.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": [
+    "community-platform",
+    "content-moderation",
+    "publication-pipeline",
+    "democratic-governance",
+    "black-queer-liberation"
+  ],
+  "author": "BLKOUT Community",
+  "license": "AGPL-3.0-or-later"
+}
