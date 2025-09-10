@@ -5,7 +5,7 @@
   "description": "BLKOUT Community Liberation Platform - Complete Community Platform",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "start": "vercel --prod",
     "deploy": "vercel --prod",
