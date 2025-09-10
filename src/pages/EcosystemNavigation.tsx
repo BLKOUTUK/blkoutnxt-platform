@@ -43,7 +43,7 @@ const EcosystemNavigation: React.FC = () => {
       id: 'newsroom',
       name: 'BLKOUT Newsroom',
       description: 'Community-driven news aggregation and publishing platform',
-      url: '/newsroom',
+      url: 'https://blkoutnxt.vercel.app/newsroom',
       status: 'development',
       icon: '📰',
       features: ['News Aggregation', 'Community Editorial', 'Publisher Network', 'Liberation Journalism']
@@ -52,7 +52,7 @@ const EcosystemNavigation: React.FC = () => {
       id: 'governance',
       name: 'Community Governance',
       description: 'Democratic decision-making platform with consensus-building tools',
-      url: '/governance',
+      url: 'https://blkoutnxt.vercel.app/governance',
       status: 'live',
       icon: '🗳️',
       features: ['Democratic Voting', 'Consensus Building', 'Proposal System', 'Community Assembly']
@@ -61,7 +61,7 @@ const EcosystemNavigation: React.FC = () => {
       id: 'moderation',
       name: 'Content Moderation',
       description: 'Community-controlled content moderation and publication pipeline',
-      url: '/moderation',
+      url: 'https://blkoutnxt.vercel.app/moderation',
       status: 'live',
       icon: '🛡️',
       features: ['Democratic Moderation', 'Publication Pipeline', 'Community Guidelines', 'Transparency']
