@@ -6,8 +6,8 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createClient } from '@supabase/supabase-js';
 
 // Direct Supabase connection (since import path doesn't work in Vercel serverless)
-const supabaseUrl = process.env.SUPABASE_URL || 'https://bgjengudzfickgomjqmz.supabase.co';
-const supabaseKey = process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || '';
+const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || 'https://bgjengudzfickgomjqmz.supabase.co';
+const supabaseKey = process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJnamVuZ3VkemZpY2tnb21qcW16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU3MjM5MzksImV4cCI6MjA0MTI5OTkzOX0.UJlmgIrKS1QWNq1L5L-xmwqNDYnKpNLGYWCF4Qceg-M';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Content type detection helper
