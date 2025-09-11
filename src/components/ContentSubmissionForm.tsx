@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://bgjengudzfickgomjqmz.supabase.co';
-const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY || 
-                   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJnamVuZ3VkemZpY2tnb21qcW16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2MTI3NjcsImV4cCI6MjA3MTE4ODc2N30.kYQ2oFuQBGmu4V_dnj_1zDMDVsd-qpDZJwNvswzO6M0';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://bgjengudzfickgomjqmz.supabase.co';
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 
+                   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJnamVuZ3VkemZpY2tnb21qcW16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjU3MjM5MzksImV4cCI6MjA0MTI5OTkzOX0.UJlmgIrKS1QWNq1L5L-xmwqNDYnKpNLGYWCF4Qceg-M';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const ContentSubmissionForm: React.FC = () => {
